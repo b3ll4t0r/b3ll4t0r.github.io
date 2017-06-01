@@ -2,27 +2,28 @@
 <head>
   <title>Shawn Catoe</title>
   <meta charset="utf-8">
-  <link href="main.css" rel="stylesheet" type="text/css" />
+  <link href="main.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="print.css" media="print" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Gudea">
   <link rel="shortcut icon" href="http://faviconist.com/icons/f9294cc2281f1004e846adbea5f4b316/favicon.ico" />
 </head>
 <body>
-  <header class="header-details">
+  <header>
     <h1 class="name">Shawn Catoe</h1>
     <article class="contact-information">
-      <p class="contact-deets">176 Odyssey Dr.  Wilmington, DE 19808<br/><br/>512 947 2711<br/><br/><a class="link" href="mailto:shawn_catoe@yahoo.com">shawn_catoe@yahoo.com</a></p>
+      <p class="contact-deets">(512) 947-2711<br/><br/><br/><a class="link" href="mailto:shawn_catoe@yahoo.com">shawn_catoe@yahoo.com</a></p>
     </article>
     <br/><article class="link-container">
       <a class="link" href="https://github.com/b3ll4t0r" target="_blank"><img src="https://avatars3.githubusercontent.com/u/9919?v=3&s=200" alt="github icon" width="21" height="21">GitHub</a>
       <a class="link" href="https://www.linkedin.com/in/shawn-catoe/" target="_blank"><img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAANyAAAAJGRlZTNlZDQwLTk4YTItNDA1MS04MzBjLWJmNGQ5M2RmZGUxYw.png" alt="linkedin icon" width="18" height="18">LinkedIn</a>
-    </article><br/><br/>
+    </article><br/>
     <article class="nav" align="center">
       <p class="job"><a class="link" href="#profile">profile</a> | <a class="link" href="#summary">summary</a> | <a class="link" href="#experience">experience</a> | <a class="link" href="#memberships">memberships</a> | <a class="link" href="#education">education</a></p>
     </article>
   </header>
   <section class="content">
     <h2 id="profile" class="category-headers">Profile</h2><hr/>
-      <p class="category-description-main">Resourceful, dynamic professional with broad range of experience in across information technology and large scale programs. Highly skilled in strategic planning, application &amp; integration design patterns, development, testing, release management, and operations. Strong leader and motivator who excels in teaching, training and empowering employees. Demonstrated strengths in project resource planning &amp; management, distributed computing, product development, and problem &amp; issue resolution. Proven track record of success in creative, effective and distributed application design across multiple lines of business. Flexible, adaptable, results driven and committed to quality process and product.</p>
+      <p class="profile">Resourceful, dynamic professional with broad range of experience in across information technology and large scale programs. Highly skilled in strategic planning, application &amp; integration design patterns, development, testing, release management, and operations. Strong leader and motivator who excels in teaching, training and empowering employees. Demonstrated strengths in project resource planning &amp; management, distributed computing, product development, and problem &amp; issue resolution. Proven track record of success in creative, effective and distributed application design across multiple lines of business. Flexible, adaptable, results driven and committed to quality process and product.</p>
     <h2 id="summary" class="category-headers">Summary</h2><hr/>
      <ul class="summary">
        <li>Two-time recipient of PayPal’s Critical Talent Award.</li>
@@ -35,20 +36,238 @@
        <li>Sun Certified Java Developer.</li>
     </ul>
     <h2 id="experience" class="category-headers">Experience</h2><hr>
-      <p class="job"><a class="link" href="https://barclaycard.co.uk" target="_blank">Barclaycard</a> | <span class="location">Wilmington, DE</span> | <span class="date">Sept 2016-Present</span></p>
+      <p class="job">Barclaycard | Wilmington, DE | Sept 2016 - Present</p>
         <p class="role">Director of Opertaions and Technology</p>
-        <p class="category-description">Graphic Design project lead: responsible for the creation, development and production management of large- and small-scale cultural history and conservation education projects for a range of clients and uses.</p>
-      <p class="job"><a class="link" href="https://paypal.com">PayPal</a> | <span class="location">Austin, TX</span> | <span class="date">June 2011-Sept 2016</span></p>
+        <p class="project"><b>CardNG:</b> A transformation of the existing Card busines logic to a CQRS, Event driven platform based on Domain Driven Design.</p>
+        <ul class="project-details">
+          <li>Reported to the CTO as the ranking member of the team.</li>
+          <li>Managed an international team of 7.</li>
+          <li>Project staffed at 125 at peak.</li>
+        </ul>
+      <p class="job">PayPal | Austin, TX | June 2011 - Sept 2016</p>
         <p class="role">Senior Technical Lead of Architecture</p>
-      <p class="job">Dell | <span class="location">Round Rock, TX</span> | <span class="date">Dec 2010 - June 2011</span></p>
-        <p class="role">Graphic Designer<br>2007–2008</p>
-      <p class="job">Workshop Design, Inc. | <span class="location">Kansas City, MO</span></p>
-        <p class="role">Intern, print and environmental design<br>2006</p>
-    <h2 class="category-headers">Education</h2><hr>
-      <p class="job"><a href="https://shsu.edu" target="_blank">Sam Houston State University</a> |<span class="location">Hunstville, TX</span> |<span class="date">1996-99</span></p>
+        <p class="project"><b>Account Updater</b>: Replatformed a 6-year-old batch system to an event driven system.</p>
+        <ul class="project-details">
+          <li>Improved performance from 6M records to 30M w projected capacity of 100M.</li>
+          <li>Engineered a diff report to enable running the legacy &amp; new solution parallel for transistion.</li>
+          <li>Created a multi-tenant messaging interface to allow for de-dupe logic between tenants.</li>
+          <li>Designed and developed a multi-partner platform to scale vendors for this and sibling projects.</li>
+        </ul>
+        <p class="project"><b>Commercial Entity</b>: Replatformed a 5-year-old system that aggregates PayPal’s total payment volume, subdivided by merchant. Qualifying merchants then have a greater compliance burden to continue taking payments.</p>
+        <ul class="project-details">
+          <li>Transactions are fed into Elasticsearch from Settlements and watchers are used to roll up data daily.</li>
+          <li>A shallow data set is moved into Oracle in which a REST API is built over to enable merchant management.</li>
+          <li>Replatformed the issuer integration using the design and existing components from Account Updater.</li>
+        </ul>
+        <p class="project"><b>Stand-In</b>: Created PayPal's enterprise wide Stand-In ability complete w real-time transaction processing and stateful, scheduled transaction replay.</p>
+        <ul class="project-details">
+          <li>Leveraged UML to stabilize the requirements between product and engineering.</li>
+          <li>Prototyped the entire solution in NodeJS to validate the integration patterns.</li>
+          <li>Delivered a REST based component for real-time processing, a JMS messaging solution for replaying, a Kafka based transaction journal and a Kraken based admin UI.</li>
+          <li>Load tested to 210 TPS at 90ms response time per 8 CPU/32 GB node.  Leveraged Executors over LMAX.</li>
+        </ul>
+        <p class="project"><b>Global Credit Expansion</b>: An effort to expand the PayPal credit offering across all supported regions; initially US, UK, DE followed by FR, IT, ES.</p>
+        <ul class="project-details"><li>System Monitoring:<br/>
+          <ul class="project-details">
+            <li>Architected all aspects of system and component metrics, interactions and alerting.</li>
+            <li>Prototyped the entire solution in NodeJS to validate the integration patterns.</li>
+          </ul></li>
+          <li>Credit 2.0:<br/>An effort to redesign the PayPal credit frameworks, domain model and partner integrations.
+            <ul class="project-details">
+              <li>Prototyped COBOL integration with a new partner.</li>
+              <li>Early adopter of the latest Java service framework and helped to finalize their product.</li>
+              <li>This effort focused on AU first followed by US (rewrite), FR, IT, SP.</li>
+            </ul></li>
+        </ul>
+        <p class="project"><b>Digital Wallet</b>: An effort to re-platform and redesign PayPal's consumer facing Web presence.</p>
+        <ul class="project-details">
+          <li>Domain Framework:<br/>a services based bridge pattern.
+            <ul class="project-details">
+              <li>Architected a framework, which isolates Web service changes from existing applications.</li>
+            </ul>
+          </li>
+          <li>Progressive Rendering (APEX):<br/>a framework use multiple threads to process a request.
+          <ul class="project-details">
+            <li>Designed and implemented two different server side patterns to compare effectiveness.</li>
+            <li>Leveraged JSP tags so there was little impact to the existing application.</li>
+          </ul>
+          </li>
+        </ul>
+        <p class="project"><b>Installments - Brazil</b>: A re-platforming effort for installment payments use cases.</p>
+        <ul class="project-details">
+          <li>Drove product and business owners to clarify the requirements and focus the delivery goals in order to move the project forward.</li>
+          <li>Created a UML portfolio for the project to ensure product and development had the same understanding.</li>
+        </ul>
+        <p class="project"><b>Bonanza</b>: The design and development of PayPal's banking &amp; bill pay experience.</p>
+        <ul class="project-details">
+          <li>The lead architect for all consumer facing applications and 3rd party service integration.</li>
+          <li>Leading the collaboration to establish an internal taxonomy for a new business domain.</li>
+        </ul>
+        <p class="project"><b>Victoria's Secret</b>: Late requirement due to contract update; requirements to deployment in 6 weeks.</p>
+        <ul class="project-details">
+          <li>Ramped up a new Product Owner on process while driving the implementation team forward.</li>
+          <li>Quickly triaged issues as they arose in order to unblock the delivery of the solution.</li>
+          <li>The solution was designed, implemented and delivered in 6 weeks with no post deployment issues.</li>
+        </ul>
+        <p class="project"><b>SoftBank</b>: A stabilization effort VIP partner's integration operations.</p>
+        <ul class="project-details">
+          <li>Executed in depth design and code reviews to ensure a high level of quality in solutions that effect SoftBank.</li>
+          <li>Collaborated to design a partner centric test simulator to run against future deployments.</li>
+        </ul>
+        <p class="project"><b>Russia roll-out</b>: The full introduction of the PayPal experience for Russia.</p>
+        <ul class="project-details">
+          <li>Lead architect (end-to-end) for the project.</li>
+          <li>Created a system wide view of the project covering each domain's facet.</li>
+        </ul>
+        <p class="project"><b>PayPal Lite</b>: A lightweight experience for APAC.</p>
+        <ul class="project-details">
+          <li>Collaborated with architects across the organization to deliver PayPal Lite under tight time-lines.</li>
+          <li>Managed the technical aspects through consistent collaboration and feedback with the implementation team.</li>
+        </ul>
+        <p class="project"><b>Engineering Excellence</b>: Vertical Solutions requires the highest level of engineering craftsmanship in its role working across PayPal domains to deliver targeted solutions.</p>
+        <ul class="project-details">
+          <li>Assessed the talent pool, developed goals, created curriculum and drove implementation of the program.</li>
+          <li>Worked across teams, time zones, and cultures to motivate engineers to up their game.</li>
+        </ul>
+        <p class="project"><b>Bar Raiser - Austin Site Lead</b>: An initiative to ensure only high quality candidates join our organization.</p>
+        <ul class="project-details">
+          <li>Grew the membership to include departments across the organization.</li>
+          <li>Co-designed a post-interview round, which proctored two coding exercises intended to elaborate the candidate's real world coding experience.</li>
+        </ul>
+      <p class="job">Dell | Round Rock, TX | Dec 2010 - June 2011</p>
+        <p class="role">Software Engineer III</p>
+        <p class="project"><b>Virtual Integrated Services</b>: A datacenter management appliance which simplifies managing physical and virtual servers as well as the associated storage and networking configurations.</p>
+        <ul class="project-details">
+          <li>Managed a team of 7 developers and 2 testers as a Scrum Master.</li>
+          <li>Designed Cloud Computing (PaaS and IaaS) services for simplified operating system, server, storage and networking datacenter management.</li>
+          <li>Led the effort to document the application platform and establish standards.</li>
+          <li>Led the elaboration and subsequent refactoring of 3rd party integrations.</li>
+        </ul>
+        <p class="job">ERCOT | Taylor, TX | May 2004 - Dec 2010</p>
+          <p class="role">Senior Enterprise Architect</p>
+          <p class="project"><b>Daily Duties</b></p>
+          <ul class="project-details">
+            <li>Created standards, guidelines and position papers to ensure consistency among projects.</li>
+            <li>Created models such as: Capability Maturity Model, Domain Model, Information Flows and Deployment Diagrams</li>
+            <li>Participated in the ISO/RTO Technical Council's (ITC) Architecture Working Group (AWG) to ensure IT compliance with NERC standards and regulations.</li>
+          </ul>
+          <p class="project"><b>Texas Nodal Transition</b>: Assumed the Nodal Enterprise Architect role, which is responsible for the technical design and delivery for the $646M Nodal program.</p>
+          <ul class="project-details">
+            <li>Responsible for 14 business systems comprised of 236 individual applications.</li>
+            <li>Provided technical advice and guidance to senior management.</li>
+            <li>Managed a team of 8 technical architects.</li>
+            <li>Developed and implemented a process used to drive technical/integration issues to resolution.</li>
+            <li>Identity and Access Management<br/>Architected and provided implementation guidance for the replacement of the identity management system and the upgrade of access management infrastructure.
+              <ul class="project-details">
+                <li>Led the creation of use cases for the system.</li>
+                <li>Ensured regulatory compliance by incorporating specific features to support audits.</li>
+              </ul>
+            </li>
+            <li>Cloud Computing and SOA<br/>Initiated efforts and assisted in directing the corporate goal of Software as a Service (SaaS) model.
+              <ul class="project-details">
+                <li>Assisted preparing the market for Web services as the architect for the API working group.</li>
+                <li>Established the guiding principles that determined and drove the design of services.</li>
+                <li>Created a Web service sandbox for the market, which demonstrated Nodal Web services.</li>
+              </ul>
+            </li>
+            <li>Market Information System<br/>Architected and provided implementation guidance throughout the duration of the project.
+              <ul class="project-details">
+                <li>Facilitated and drove the technical design of the portal, policy management and security model.</li>
+                <li>Led the design of real time dashboards and the supporting systems which provide the data.</li>
+              </ul>
+            </li>
+            <li>Current Day Reporting
+              <ul class="project-details">
+                <li>Facilitated and drove the technical design of the reporting framework.</li>
+                <li>Integrated the business process for tracking reports into the framework for creating the report.</li>
+              </ul>
+            </li>
+            <li>Market Manager UI and Outage Scheduler UI<br/>Architected ERCOT's first UIs that are backed only by Web services.
+              <ul class="project-details">
+                <li>Facilitated and drove the design of each UI and their interaction with the integration layer.</li>
+              </ul>
+            </li>
+          </ul>
+          <p class="project"><b>Capacity Planning</b>: Oversaw efforts that support 8 production, 2 test, and 4 development environments. Increased server count from 300 to over 1,200. </p>
+          <ul class="project-details">
+            <li>Oversaw virtualization adoption for non-production environments.</li>
+            <li>Consolidated applications across all servers, based upon utilization, compatibility, security, and SLA.</li>
+            <li>Assisted in redefining the hardware provisioning and decommission processes.</li>
+            <li>Participated in the requirements gathering, design, and programming of 2 new 10,000 sqft. datacenters.</li>
+          </ul>
+          <p class="project"><b>Lead Architect in the NIST SmartGrid effort</b></p>
+          <ul class="project-details">
+            <li>A member of the NIST SGIP.</li>
+            <li>A member of the IEEE P2030 TF2; assisting the modeling subgroup with 61850 integration.</li>
+            <li>Assisted in creating use cases for PAP03 &amp; PAP07 to be submitted to NIST via the IRC.</li>
+          </ul>
+          <p class="project"><b>Process Modeling and Implementation</b></p>
+          <ul class="project-details">
+            <li>Implemented a Knowledge Base for departments to share information and reusable code libraries.</li>
+            <li>Created an application and surrounding processes to track the lifecycle of products and present graphical roadmaps for selected products.</li>
+            <li>Created an application and surrounding processes to allow the Asset Management team to control desktop software assets and provisioning.</li>
+          </ul>
+          <p class="project"><b>Software Development Life Cycle</b>: Initiated efforts to continually improve development processes, security and reliability. </p>
+          <ul class="project-details">
+            <li>Authored Web Presence and Service Approach strategy guide.</li>
+            <li>Implemented a Build Orchestration tool for consistent migrations and reduced deployment times.</li>
+            <li>Created a peer code review process for each language.</li>
+          </ul>
+        <p class="job">The Grendel Group | Taylor, TX | Nov 2003 - April 2004</p>
+          <p class="role">Contractor to ERCOT</p>
+          <ul class="project-details">
+            <li>Developed an ANT based build system with a release management tool that versions and stores libraries for reuse</li>
+            <li>Redesigned and expanded the functionality of the Retail UI to be in line with standard Web presence.</li>
+            <li>Rewrote in Java an existing XML transaction submission system that was implemented in J++, COM and ASP.</li>
+          </ul>
+        <p class="job">Vegas.com | Las Vegas, NV | Mar 2003 - Nov 2003</p>
+          <p class="role">Software Engineer</p>
+          <ul class="project-details">
+            <li>Designed and developed a multi-threaded revenue generating booking agent for package deals and an administration application for building packages.</li>
+            <li>Developed an administration tool to handle all dynamic data and generate static pages served. Application was mentioned by the CEO in Wall Street Journal interview.</li>
+            <li>Internationalized all 6 Vegas.com applications and developed a language update tracking application, all in 9 weeks.</li>
+            <li>Updated all user facing applications to protect from SQL insertion &amp; buffer over-flow attacks</li>
+          </ul>
+        <p class="job">EMC Mortgage Corporation | Irving, TX | Mar 2002 - Mar 2003</p>
+          <p class="role">Programmer III</p>
+          <ul class="project-details">
+            <li>Lead Java developer on the Web Access to Imaged Documents application, which resulted in $220K annual savings.</li>
+          </ul>
+        <p class="job">TRX Technology Services | Dallas, TX | Nov 2000 - Oct 2001</p>
+          <p class="role">Software Engineer</p>
+          <ul class="project-details">
+            <li>Lead Java Developer on a suite of meeting hosting and management applications.</li>
+          </ul>
+        <p class="job">AllGood Media | Dallas, TX | May 2000 - Oct 2000</p>
+          <p class="role">Java Developer</p>
+          <ul class="project-details">
+            <li>Lead Java developer for a wizard style website creation tool.</li>
+          </ul>
+        <p class="job">Pegasus Solutions | Dallas, TX | June 1999 - April 2000</p>
+          <p class="role">Programmer Analyst I</p>
+          <ul class="project-details">
+            <li>Developed Y2K updates to a JavaScript application that 3rd parties used to support their content on Pegasus’ servers.</li>
+          </ul>
+    <h2 id="memberships" class="category-headers">Memberships</h2><hr>
+      <br/><ul class="project-details">
+        <li><a href="https://www.acm.org" target="_blank" class="link">Association for Computing Machinery</a></li>
+        <li><a href="https://www.ieee.org" target="_blank" class="link">Institute of Electrical and Electronics Engineers, Inc.</a></li>
+      </ul>
+    <h2 id="education" class="category-headers">Education</h2><hr>
+      <p class="job">Sam Houston State University | Hunstville, TX | 1996-99</p>
       <p class="role">Bachelor of Science in Computer Science; minor in General Business.</p>
       <p class="job">Certifications</p>
-      <p class="role">BFA, Graphic Design<br>Dean's List 2004–2007<br>2007</p>
+      <ul class="project-details">
+        <li>Sun Certified Programmer for Java 2 by Sun</li>
+        <li>Mastering Software Analysis by IBM</li>
+        <li>Essentials of Rational Unified Process by IBM</li>
+        <li>Application Security Training by Security Compass</li>
+        <li>BW611 - TIBCO Business Works 5.x Integration Boot Camp</li>
+        <li>BW621 - TIBCO Business Works 5.x Enterprise Solutions Boot Camp</li>
+        <li>EMS301 - TIBCO Enterprise Message Service 4.x Administration</li>
+        <li>SiteMinder 5.0 Administration</li>
+        <li><a href="http://austin.dalecarnegie.com" class="link" target="_blank">Dale Carnegie</a> - Human Relationships and Effective Communication </li>
+      </ul>
   </section>
 </body>
 </html>

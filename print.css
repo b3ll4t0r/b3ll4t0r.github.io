@@ -17,9 +17,9 @@ body {
 .contact-information {
   color: #808284;
   display: inline-block;
-  font-size: .8em;
+  font-size: .6em;
   letter-spacing: .5px;
-  line-height: .9em;
+  line-height: .7em;
   text-transform: uppercase;
   float: right;
 }
@@ -27,17 +27,17 @@ body {
 .links-container {
   color: #808284;
   display: inline-block;
-  font-size: .8em;
+  font-size: .6em;
   letter-spacing: 1px;
-  line-height: .9em;
+  line-height: .7em;
   text-transform: uppercase;
 }
 
 .nav {
   color: #808284;
-  font-size: .8em;
+  font-size: .6em;
   letter-spacing: 1px;
-  line-height: .9em;
+  line-height: .7em;
   text-transform: uppercase;
   margin-right: 7%;
 }
@@ -68,7 +68,7 @@ body {
 .job {
   color: #DF723E;
   display: inline-block;
-  font-size: 1em;
+  font-size: .7em;
   letter-spacing: 1px;
   margin-bottom: -1%;
   text-decoration: none;
@@ -77,7 +77,7 @@ body {
 .location {
   color: #58585B;
   display: inline-block;
-  font-size: .8em;
+  font-size: .6em;
   letter-spacing: 1px;
   margin-bottom: -1%;
   margin-top: 1.1em;
@@ -87,7 +87,7 @@ body {
 
 .category-headers {
   color: #DF723E;
-  font-size: 1.1em;
+  font-size: .7em;
   letter-spacing: 2px;
   margin-top: 1.5em;
   margin-bottom: .1em;
@@ -96,7 +96,7 @@ body {
 
 .role {
   color: #808284;
-  font-size: 1em;
+  font-size: .7em;
   font-style: italic;
   font-weight: bold;
   line-height: 1.4em;
@@ -107,17 +107,17 @@ body {
 
 .date {
   color: #808284;
-  font-size: .9em;
+  font-size: .7em;
   font-style: italic;
   line-height: 1.4em;
   margin-bottom: 1%;
-  margin-left: 0%;
+  margin-left: 2%;
   margin-top: .5em;
 }
 
 .profile {
   color: #808284;
-  font-size: .9em;
+  font-size: .7em;
   line-height: 1.4em;
   margin-bottom: 1%;
   margin-left: 2%;
@@ -127,7 +127,7 @@ body {
 
 .summary {
   color: #808284;
-  font-size: .9em;
+  font-size: .7em;
   line-height: 1.4em;
   margin-bottom: 1%;
   margin-left: .01em;
@@ -137,7 +137,7 @@ body {
 
 .project {
   color: #808284;
-  font-size: .9em;
+  font-size: .6em;
   line-height: 1.4em;
   margin-bottom: 1%;
   margin-left: 2%;
@@ -147,8 +147,8 @@ body {
 
 .project-details {
   color: #808284;
-  font-size: .9em;
-  line-height: 1.4em;
+  font-size: .6em;
+  line-height: 1em;
   margin-bottom: 1%;
   margin-left: .01em;
   margin-right: 7%;
