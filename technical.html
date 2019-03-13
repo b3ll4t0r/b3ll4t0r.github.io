@@ -2,7 +2,7 @@
 <head>
   <title>Shawn Catoe</title>
   <meta charset="utf-8">
-  <meta property="og:title" content="Shawn Catoe's Resume" />
+  <meta property="og:title" content="Shawn Catoe, Architect Extraordinaire" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://b3ll4t0r.github.io/technical.html" />
   <meta property="og:image" content="https://b3ll4t0r.github.io/image/head.jpg" />
@@ -31,13 +31,12 @@
       <p class="profile">Resourceful, dynamic professional with broad range of experience across information technology and large scale programs. Highly skilled in strategic planning, application &amp; integration design patterns, development, testing, release management, and operations. Strong leader and motivator who excels in teaching, training and empowering employees. Demonstrated strengths in project resource planning &amp; management, distributed computing, product development, and problem &amp; issue resolution. Proven track record of success in creative, effective and distributed application design across multiple lines of business. Flexible, adaptable, results driven and committed to quality process and product.</p>
     <h2 id="summary" class="category-headers">Summary</h2><hr/>
      <ul class="summary">
-       <li>Enrolled into Barclay’s iLead program, fast tracking to a Managing Director role.</li>
        <li>Managed an $11M annual budget for Barclay's global platform and frameworks.</li>
        <li>Two-time recipient of PayPal’s Critical Talent Award.</li>
        <li>Designed and implemented scalable, resilient payment solutions across multiple compliance zones.</li>
-       <li>Led the quality and engineering excellence discipline effort for PayPal’s Global Credit Expansion of ~150 engineers.</li>
-       <li>Led the overall design as Chief Architect for ERCOT's $646M Nodal program.</li>
-       <li>Involved in the NIST SmartGrid effort as ERCOT's technical lead.</li>
+       <li>Led ~150 engineers through a quality and engineering excellence discipline effort for PayPal’s Global Credit Expansion.</li>
+       <li>Led 8 architects the overall design as Chief Architect for ERCOT's $646M Nodal program.</li>
+       <li>Techincal representative of ERCOT for the <a href="https://www.nist.gov/engineering-laboratory/smart-grid" target="_blank">NIST SmartGrid</a> effort.</li>
        <li>Patent pending for "Framework to process Financial Reference Data".</li>
     </ul>
     <h2 id="experience" class="category-headers">Experience</h2><hr>
@@ -50,7 +49,7 @@
           <li>Led the solution design and development to integrate with <a class="link" href="https://developer.mastercard.com/documentation/automatic-billing-updater-abu/1" target="_blank">Mastercard's ABU</a>, <a class="link" href="https://network.americanexpress.com/globalnetwork/dam/jcr:e1dfe2e3-1448-4511-b652-9e7eb0c6eb4e/GNW_Cardrefresher_FAQ_July2017.pdf" target="_blank">American Express' CardRefresher</a> and <a class="link" href="https://developer.visa.com/capabilities/vau" target="_blank">Visa's VAU</a> solutions.</li>
           <li>Led the solution design and development to obtain ad-hoc updates from issuers such as Chase, Wells Fargo and Discover.</li>
           <li>Led the solution design and development to expand the offering to internal tenants (Braintree) and external parties.</li>
-          <li>Leveraged <a class="link" href="https://martinfowler.com/bliki/CQRS.html" target="_blank">CQRS</a> and <a class="link" href="https://martinfowler.com/eaaDev/EventSourcing.html" target="_blank">Event Souring</a> to improve performance from 30M records a month to 30M records in 9 hours, or +2B per month.</li>
+          <li>Leveraged <a class="link" href="https://martinfowler.com/bliki/CQRS.html" target="_blank">CQRS</a> and <a class="link" href="https://martinfowler.com/eaaDev/EventSourcing.html" target="_blank">Event Sourcing</a> to improve performance from 30M records a month to 30M records in 9 hours, or +2B per month.</li>
           <li>Patent pending for "Framework to process Financial Reference Data".</li>
         </ul>
       <p class="job">Barclaycard | Wilmington, DE | Sept 2016 - Sept 2017</p>
@@ -90,21 +89,19 @@
         <p class="project"><b>Account Updater</b>: Replatformed a 6-year-old batch system to an event driven system.</p>
         <ul class="project-details">
           <li>Improved performance from 6M records to 30M w projected capacity of 100M.</li>
-          <li>Engineered a diff report to enable running the legacy &amp; new solution parallel for transistion.</li>
           <li>Created a multi-tenant messaging interface to allow for de-dupe logic between tenants.</li>
           <li>Designed and developed a multi-partner platform to scale vendors for this and sibling projects.</li>
         </ul>
         <p class="project"><b>Commercial Entity</b>: Replatformed a 5-year-old system that aggregates PayPal’s total payment volume, subdivided by merchant. Qualifying merchants then have a greater compliance burden to continue taking payments.</p>
         <ul class="project-details">
-          <li>Transactions are fed into Elasticsearch from Settlements and watchers are used to roll up data daily.</li>
-          <li>A shallow data set is moved into Oracle in which a REST API is built over to enable merchant management.</li>
+          <li>Transactions are fed into Elasticsearch from Settlements and watchers are used to roll up data daily to enable merchant management.</li>
           <li>Replatformed the issuer integration using the design and existing components from Account Updater.</li>
         </ul>
         <p class="project"><b>Stand-In</b>: Created PayPal's enterprise wide Stand-In ability complete w real-time transaction processing and stateful, scheduled transaction replay.</p>
         <ul class="project-details">
           <li>Leveraged UML to stabilize the requirements between product and engineering.</li>
           <li>Prototyped the entire solution in NodeJS to validate the integration patterns.</li>
-          <li>Delivered a REST based component for real-time processing, a JMS messaging solution for replaying, a Kafka based transaction journal and a Kraken based admin UI.</li>
+          <li>Delivered a REST based component for real-time processing, a messaging solution for replaying, a Kafka based transaction journal and a NodeJS based admin UI.</li>
           <li>Load tested to 210 TPS at 90ms response time per 8 CPU/32 GB node.  Leveraged Executors over LMAX.</li>
         </ul>
         <p class="project"><b>Global Credit Expansion</b>: An effort to expand the PayPal credit offering across all supported regions; initially US, UK, DE followed by FR, IT, ES.</p>
@@ -146,7 +143,6 @@
         </ul>
         <p class="project"><b>Victoria's Secret</b>: Late requirement due to contract update; requirements to deployment in 6 weeks.</p>
         <ul class="project-details">
-          <li>Ramped up a new Product Owner on process while driving the implementation team forward.</li>
           <li>Quickly triaged issues as they arose in order to unblock the delivery of the solution.</li>
           <li>The solution was designed, implemented and delivered in 6 weeks with no post deployment issues.</li>
         </ul>
@@ -169,11 +165,6 @@
         <ul class="project-details">
           <li>Assessed the talent pool, developed goals, created curriculum and drove implementation of the program.</li>
           <li>Worked across teams, time zones, and cultures to motivate engineers to up their game.</li>
-        </ul>
-        <p class="project"><b>Bar Raiser</b> - Austin Site Lead: An initiative to ensure only high quality candidates join our organization.</p>
-        <ul class="project-details">
-          <li>Grew the membership to include departments across the organization.</li>
-          <li>Co-designed a post-interview round, which proctored two coding exercises intended to elaborate the candidate's real world coding experience.</li>
         </ul>
       <p class="job">Dell | Round Rock, TX | Dec 2010 - June 2011</p>
         <p class="role">Software Engineer III</p>
@@ -200,7 +191,7 @@
             <li>Developed and implemented a process used to drive technical/integration issues to resolution.</li>
             <li>Identity and Access Management<br/>Architected and provided implementation guidance for the replacement of the identity management system and the upgrade of access management infrastructure.
               <ul class="project-details">
-                <li>Led the creation of use cases for the system.</li>
+                <li>Led the creation of use cases and sequence interactions.</li>
                 <li>Ensured regulatory compliance by incorporating specific features to support audits.</li>
               </ul>
             </li>
@@ -233,26 +224,19 @@
           <ul class="project-details">
             <li>Oversaw virtualization adoption for non-production environments.</li>
             <li>Consolidated applications across all servers, based upon utilization, compatibility, security, and SLA.</li>
-            <li>Assisted in redefining the hardware provisioning and decommission processes.</li>
             <li>Participated in the requirements gathering, design, and programming of 2 new 10,000 sqft. datacenters.</li>
           </ul>
           <p class="project"><b>Lead Architect in the NIST SmartGrid effort</b></p>
           <ul class="project-details">
             <li>A member of the NIST SGIP.</li>
             <li>A member of the IEEE P2030 TF2; assisting the modeling subgroup with 61850 integration.</li>
-            <li>Assisted in creating use cases for PAP03 &amp; PAP07 to be submitted to NIST via the IRC.</li>
-          </ul>
-          <p class="project"><b>Process Modeling and Implementation</b></p>
-          <ul class="project-details">
-            <li>Implemented a Knowledge Base for departments to share information and reusable code libraries.</li>
-            <li>Created an application and surrounding processes to track the lifecycle of products and present graphical roadmaps for selected products.</li>
-            <li>Created an application and surrounding processes to allow the Asset Management team to control desktop software assets and provisioning.</li>
+            <li>Assisted in creating use cases for PAP03 &amp; PAP07; submitted to NIST via the IRC.</li>
           </ul>
           <p class="project"><b>Software Development Life Cycle</b>: Initiated efforts to continually improve development processes, security and reliability. </p>
           <ul class="project-details">
             <li>Authored Web Presence and Service Approach strategy guide.</li>
             <li>Implemented a Build Orchestration tool for consistent migrations and reduced deployment times.</li>
-            <li>Created a peer code review process for each language.</li>
+            <li>Implemented a Knowledge Base for departments to share information and reusable code libraries.</li>
           </ul>
         <p class="job">The Grendel Group | Taylor, TX | Nov 2003 - April 2004</p>
           <p class="role">Contractor to ERCOT</p>
