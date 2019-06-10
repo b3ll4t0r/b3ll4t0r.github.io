@@ -44,16 +44,25 @@
       <p class="job">PayPal | Austin, TX | Sept 2017 - Present</p>
         <p class="role">Lead Architect</p>
         <p class="project"><b>Auth-Rate:</b> Improved the authorization rates of credit card transactions by almost 100 basis points.</p>
-        <ul class="project-details">
-          <li>Generated $33M of revenue in 2018, $21M in 2019, on track toward $1.1B incremental revenue by 2021.</li>
-          <li>Tuned the solution leading to $350K savings in operational costs.</li>
-          <li>The percentage improvement in authorization rates resulted in partners directing more traffic to PayPal.</li>
-          <li>Led the solution design and development to integrate with <a class="link" href="https://developer.mastercard.com/documentation/automatic-billing-updater-abu/1" target="_blank">Mastercard's ABU</a>, <a class="link" href="https://network.americanexpress.com/globalnetwork/dam/jcr:e1dfe2e3-1448-4511-b652-9e7eb0c6eb4e/GNW_Cardrefresher_FAQ_July2017.pdf" target="_blank">American Express' CardRefresher</a> and <a class="link" href="https://developer.visa.com/capabilities/vau" target="_blank">Visa's VAU</a> solutions.</li>
-          <li>Led the replatforming of a 6 year-old batch system to an event driven system.</li>
-          <li>Led the solution design and development to obtain ad-hoc updates from issuers such as Chase, Wells Fargo and Discover.</li>
-          <li>Led the solution design and development to expand the offering to internal tenants (Braintree) and external parties.</li>
-          <li>Leveraged <a class="link" href="https://martinfowler.com/bliki/CQRS.html" target="_blank">CQRS</a> and <a class="link" href="https://martinfowler.com/eaaDev/EventSourcing.html" target="_blank">Event Sourcing</a> to improve performance from 6M records a month to +2B per month.</li>
-          <li>Patent pending for "Framework to process Financial Reference Data".</li>
+        <ul class="project-details"><li><b>Account Updater</b><br/>
+          <ul class="project-details">
+            <li>Generated $33M of revenue in 2018, $21M in 2019, on track toward $1.1B incremental revenue by 2021.</li>
+            <li>Tuned the solution leading to $350K savings in operational costs.</li>
+            <li>The percentage improvement in authorization rates resulted in partners directing more traffic to PayPal.</li>
+            <li>Led the solution design and development to integrate with <a class="link" href="https://developer.mastercard.com/documentation/automatic-billing-updater-abu/1" target="_blank">Mastercard's ABU</a>, <a class="link" href="https://network.americanexpress.com/globalnetwork/dam/jcr:e1dfe2e3-1448-4511-b652-9e7eb0c6eb4e/GNW_Cardrefresher_FAQ_July2017.pdf" target="_blank">American Express' CardRefresher</a> and <a class="link" href="https://developer.visa.com/capabilities/vau" target="_blank">Visa's VAU</a> solutions.</li>
+            <li>Led the solution design and development to obtain ad-hoc updates from issuers such as Chase, Wells Fargo and Discover.</li>
+            <li>Led the solution design and development to expand the offering to internal tenants (Braintree) and external parties.</li>
+            <li>Leveraged <a class="link" href="https://martinfowler.com/bliki/CQRS.html" target="_blank">CQRS</a> and <a class="link" href="https://martinfowler.com/eaaDev/EventSourcing.html" target="_blank">Event Sourcing</a> to improve performance from 6M records a month to +2B per month.</li>
+            <!--li>Engineered a diff report to enable running the legacy &amp; new solution parallel for transistion.</li-->
+            <li>Led the replatforming of a 6 year-old batch system to an event driven system.</li>
+          </ul></li>
+          <li><b>Bank Identification Number (BIN)</b><br/>
+            <ul class="project-details">
+              <li>Leveraged <a class="link" href="https://martinfowler.com/bliki/CQRS.html" target="_blank">CQRS</a> and <a class="link" href="https://martinfowler.com/eaaDev/EventSourcing.html" target="_blank">Event Sourcing</a> to improve performance of ReST queries to 11.5K / second or 6B per day w 2ms response time for 95% of requests.</li>
+              <li>Developed an aggregation and assembly process to score inputs in order to create an &quotActive&quote set of data.</li>
+              <li>Implemented 3 layers of read resiliency in support of availability.</li>
+              <li>Patent pending for "Framework to process Financial Reference Data".</li>
+            </ul></li>
         </ul>
       <p class="job">Barclaycard | Wilmington, DE | Sept 2016 - Sept 2017</p>
         <p class="role">Executive Director of Operations and Technology</p>
