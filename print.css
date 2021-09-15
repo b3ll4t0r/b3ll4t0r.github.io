@@ -1,7 +1,7 @@
 body {
   background-color: white;
   font-family: 'Gudea', sans-serif;
-  margin: 5% 10% 5% 10%;
+  margin: 2% 5% 2% 5%;
 }
 
 .name {
@@ -34,12 +34,7 @@ body {
 }
 
 .nav {
-  color: #001e3b;
-  font-size: .6em;
-  letter-spacing: 1px;
-  line-height: .7em;
-  text-transform: uppercase;
-  margin-right: 7%;
+  display: none
 }
 
 .contact-deets {
