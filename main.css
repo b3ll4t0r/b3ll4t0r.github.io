@@ -162,6 +162,12 @@ hr {
   margin: 0 10% 0 0;
 }
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 90%; */
+}
+
 /*
 Color pallet
 #3eb1cb	(62,177,203)
