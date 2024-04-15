@@ -1,0 +1,157 @@
+body {
+  background-color: white;
+  font-family: 'Gudea', sans-serif;
+  margin: 2% 5% 2% 5%;
+}
+
+.name {
+  color: #007fa3;
+  display: inline-block;
+  font-size: 1.6em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.contact-information {
+  color: #001e3b;
+  display: inline-block;
+  font-size: .6em;
+  letter-spacing: .5px;
+  line-height: .7em;
+  text-transform: uppercase;
+  float: right;
+}
+
+.links-container {
+  color: #001e3b;
+  display: inline-block;
+  font-size: .6em;
+  letter-spacing: 1px;
+  line-height: .7em;
+  text-transform: uppercase;
+}
+
+.nav {
+  display: none
+}
+
+.contact-deets {
+  color: #054458;
+  display: inline-block;
+  margin-bottom: 2%;
+  margin-top: 1.1em;
+  text-decoration: none;
+  text-align: left;
+}
+
+.link {
+  color: #007fa3;
+  display: inline-block;
+}
+  .link:hover {
+    color: #007fa3;
+  }
+
+.link img {
+  margin-bottom: -.2em;
+  padding-right: .3em;
+  padding-left: .3em;
+}
+
+.job {
+  color: #3eb1cb;
+  display: inline-block;
+  font-size: .7em;
+  letter-spacing: 1px;
+  margin-bottom: -1%;
+  text-decoration: none;
+}
+
+.location {
+  color: #054458;
+  display: inline-block;
+  font-size: .6em;
+  letter-spacing: 1px;
+  margin-bottom: -1%;
+  margin-top: 1.1em;
+  padding-left: .4em;
+  text-transform: uppercase;
+}
+
+.category-headers {
+  color: #007fa3;
+  font-size: .7em;
+  letter-spacing: 2px;
+  margin-top: 1.5em;
+  margin-bottom: .1em;
+  text-transform: uppercase;
+}
+
+.role {
+  color: #086b8a;
+  font-size: .7em;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-top: .5em;
+}
+
+.date {
+  color: #001e3b;
+  font-size: .7em;
+  font-style: italic;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-top: .5em;
+}
+
+.profile {
+  color: #001e3b;
+  font-size: .7em;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 7%;
+  margin-top: 1em;
+}
+
+.summary {
+  color: #001e3b;
+  font-size: .7em;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: .01em;
+  margin-right: 7%;
+  margin-top: .01em;
+}
+
+.project {
+  color: #001e3b;
+  font-size: .6em;
+  line-height: 1.4em;
+  margin-bottom: 1%;
+  margin-left: 2%;
+  margin-right: 7%;
+  margin-top: .01em;
+}
+
+.project-details {
+  color: #001e3b;
+  font-size: .6em;
+  line-height: 1em;
+  margin-bottom: 1%;
+  margin-left: .01em;
+  margin-right: 7%;
+  margin-top: .01em;
+}
+
+hr {
+  border: 1px dotted #3eb1cb;
+  border-style: none none dotted;
+  margin: 0 10% 0 0;
+}
